@@ -12,7 +12,7 @@ namespace AGE
 
 		virtual void _copyFrom(const ComponentBase *model);
 
-		void init(int health, int fullHealthValue = 0);
+		void init(int health = 0, int fullHealthValue = 0);
 
 		virtual void reset();
 

@@ -1,4 +1,5 @@
-#include "Health.hpp"
+#include "HealthComponent.hpp"
+#include <Utils/Age_Imgui.hpp>
 
 namespace AGE
 {
