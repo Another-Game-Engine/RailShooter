@@ -276,7 +276,7 @@
             }
         },
         "AGE::RigidBody": {
-            "Mass": 0,
+            "Mass": 1,
             "Inertia": {
                 "value0": 0,
                 "value1": 0,

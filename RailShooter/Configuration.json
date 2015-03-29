@@ -1,5 +1,11 @@
 {
+    "AssetsPath": {
+        "string": "../../../../GameEngine/Assets/Serialized/"
+    },
+    "ScenesPath": {
+        "string": "../../Datas/Scenes_export/"
+    },
     "ShadersPath": {
-        "string": "C:/Users/cesar/Documents/GitHub/AGE/GameEngine/x64/Debug//../../Shaders/"
+        "string": "../../../../GameEngine/Shaders/"
     }
 }

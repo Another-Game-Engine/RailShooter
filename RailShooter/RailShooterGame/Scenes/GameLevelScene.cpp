@@ -7,6 +7,18 @@
 #include <Components/CameraComponent.hpp>
 #include <Components/FreeFlyComponent.hh>
 
+#include <Components/MeshRenderer.hh>
+#include <Components/RigidBody.hpp>
+#include <Components/Light.hh>
+
+#include <Threads/ThreadManager.hpp>
+#include <Threads/RenderThread.hpp>
+#include <Threads/PrepareRenderThread.hpp>
+#include <Threads/Commands/MainToPrepareCommands.hpp>
+#include <Threads/Commands/ToRenderCommands.hpp>
+#include <Threads/Tasks/BasicTasks.hpp>
+#include <Threads/Tasks/ToRenderTasks.hpp>
+
 namespace AGE
 {
 	const std::string GameLevelScene::Name = "GameLevelScene";
@@ -39,15 +51,14 @@ namespace AGE
 			loadFromJson(sceneFileName);
 		}));
 		getInstance<AssetsManager>()->loadPackage(assetPackageFileName, assetPackageFileName);
+
 		return true;
 	}
 
 	bool GameLevelScene::_userUpdateBegin(float time)
 	{
-		if (getInstance<AGE::AssetsManager>()->isLoading())
-		{
-			return true;
-		}
+		AGE::GetPrepareThread()->getQueue()->emplaceCommand<AGE::Commands::MainToPrepare::PrepareDrawLists>();
+		AGE::GetPrepareThread()->getQueue()->emplaceCommand<AGE::Commands::ToRender::RenderDrawLists>();
 		return true;
 	}
 
@@ -59,6 +70,10 @@ namespace AGE
 		}
 		if (getInstance<Input>()->getPhysicalKeyJustReleased(AGE_ESCAPE))
 			return (false);
+		if (getInstance<Input>()->getPhysicalKeyJustReleased(AGE_r))
+		{
+			_userStart();
+		}
 		return true;
 	}
 }
