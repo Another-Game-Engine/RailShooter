@@ -1,0 +1,16 @@
+{
+    "value0": {
+        "ptr_wrapper": {
+            "id": 2147483649,
+            "data": {
+                "cereal_class_version": 0,
+                "Raw assets directory": "../../../../GameEngine/Assets/Raw/",
+                "Cooked assets directory": "../../../../GameEngine/Assets/Serialized/",
+                "Edited scenes directory": "../../../../GameEngine/Tools/AssetsEditor/Saves/",
+                "Exported scenes directory": "../../../../GameEngine/EngineCoreTest/DemoScenes/",
+                "Saved archetypes directory": "../../../../GameEngine/Tools/AssetsEditor/Archetypes/",
+                "Exported archetypes directory": "../../../../GameEngine/EngineCoreTest/DemoScenes/"
+            }
+        }
+    }
+}
