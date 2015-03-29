@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine", "..\..\AGE\GameEngine\GameEngine\GameEngine.vcxproj", "{E24D022C-E33B-47A1-BBB4-33666C76DDA9}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssetsEditor", "..\..\AGE\GameEngine\Tools\AssetsEditor\AssetsEditor.vcxproj", "{CB955D69-5F17-4705-BE34-81FBE92E26EB}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RailShooterGame", "RailShooterGame\RailShooterGame.vcxproj", "{3EF4E160-B3B6-4ED1-A3ED-A40309694529}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine", "..\..\GameEngine\GameEngine\GameEngine.vcxproj", "{E24D022C-E33B-47A1-BBB4-33666C76DDA9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssetsEditor", "..\..\GameEngine\Tools\AssetsEditor\AssetsEditor.vcxproj", "{CB955D69-5F17-4705-BE34-81FBE92E26EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,17 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EF4E160-B3B6-4ED1-A3ED-A40309694529}.Debug|x64.ActiveCfg = Debug|x64
+		{3EF4E160-B3B6-4ED1-A3ED-A40309694529}.Debug|x64.Build.0 = Debug|x64
+		{3EF4E160-B3B6-4ED1-A3ED-A40309694529}.Release|x64.ActiveCfg = Release|Win32
+		{3EF4E160-B3B6-4ED1-A3ED-A40309694529}.Release|x64.Build.0 = Release|Win32
 		{E24D022C-E33B-47A1-BBB4-33666C76DDA9}.Debug|x64.ActiveCfg = Debug|x64
 		{E24D022C-E33B-47A1-BBB4-33666C76DDA9}.Debug|x64.Build.0 = Debug|x64
 		{E24D022C-E33B-47A1-BBB4-33666C76DDA9}.Release|x64.ActiveCfg = Release|x64
 		{E24D022C-E33B-47A1-BBB4-33666C76DDA9}.Release|x64.Build.0 = Release|x64
 		{CB955D69-5F17-4705-BE34-81FBE92E26EB}.Debug|x64.ActiveCfg = Debug|x64
-		{CB955D69-5F17-4705-BE34-81FBE92E26EB}.Debug|x64.Build.0 = Debug|x64
 		{CB955D69-5F17-4705-BE34-81FBE92E26EB}.Release|x64.ActiveCfg = Release|x64
 		{CB955D69-5F17-4705-BE34-81FBE92E26EB}.Release|x64.Build.0 = Release|x64
-		{3EF4E160-B3B6-4ED1-A3ED-A40309694529}.Debug|x64.ActiveCfg = Debug|x64
-		{3EF4E160-B3B6-4ED1-A3ED-A40309694529}.Debug|x64.Build.0 = Debug|x64
-		{3EF4E160-B3B6-4ED1-A3ED-A40309694529}.Release|x64.ActiveCfg = Release|Win32
-		{3EF4E160-B3B6-4ED1-A3ED-A40309694529}.Release|x64.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
