@@ -79,6 +79,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Components\HealthComponent.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Scenes\GameLevelScene.cpp" />
   </ItemGroup>
@@ -88,6 +89,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Components\HealthComponent.hpp" />
     <ClInclude Include="Scenes\GameLevelScene.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -16,6 +16,10 @@ namespace AGE
 
 		virtual void reset();
 
+#ifdef EDITOR_ENABLED
+		virtual void editorUpdate(AScene *scene);
+#endif
+
 		//////
 		////
 		// Serialization

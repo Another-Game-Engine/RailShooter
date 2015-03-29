@@ -21,9 +21,15 @@
     <ClCompile Include="Scenes\GameLevelScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Components\HealthComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scenes\GameLevelScene.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\HealthComponent.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

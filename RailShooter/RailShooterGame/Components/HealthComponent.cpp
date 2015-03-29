@@ -32,4 +32,12 @@ namespace AGE
 		_health = 0;
 		_fullHealthValue = 0;
 	}
+
+#ifdef EDITOR_ENABLED
+	void HealthComponent::editorUpdate(AScene *scene)
+	{
+		ImGui::InputInt("Health", &_health);
+		ImGui::InputInt("Full health value", &_fullHealthValue);
+	}
+#endif // EDITOR_ENABLED
 }
