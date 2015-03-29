@@ -20,12 +20,30 @@
 #include <Threads/RenderThread.hpp>
 #include <Threads/Tasks/BasicTasks.hpp>
 
+//COMPONENTS
+#include <Components/CameraComponent.hpp>
+#include <Components/FPController.hpp>
+#include <Components/MeshRenderer.hh>
+#include <Components/Light.hh>
+#include <Components/RigidBody.hpp>
+#include <Components/SpotLight.hh>
+#include <Components/FreeFlyComponent.hh>
+
+#include <scenes/GameLevelScene.hpp>
+
+
 using namespace AGE;
 
 int			main(int ac, char **av)
 {
 	InitAGE();
 	auto engine = CreateEngine();
+
+	REGISTER_COMPONENT_TYPE(AGE::MeshRenderer);
+	REGISTER_COMPONENT_TYPE(AGE::RigidBody);
+	REGISTER_COMPONENT_TYPE(AGE::PointLightComponent);
+	REGISTER_COMPONENT_TYPE(AGE::CameraComponent);
+	REGISTER_COMPONENT_TYPE(AGE::FreeFlyComponent);
 
 	engine->launch(std::function<bool()>([&]()
 	{
@@ -41,6 +59,16 @@ int			main(int ac, char **av)
 			return true;
 		}).get();
 #endif
+
+		engine->addScene(std::make_shared<AGE::GameLevelScene>(engine), AGE::GameLevelScene::Name);
+
+		if (!engine->initScene(AGE::GameLevelScene::Name))
+		{
+			return false;
+		}
+
+		engine->enableScene(AGE::GameLevelScene::Name, 0);
+
 		return true;
 	}));
 	return (EXIT_SUCCESS);

@@ -6,10 +6,10 @@
                 "cereal_class_version": 0,
                 "Raw assets directory": "../../../../GameEngine/Assets/Raw/",
                 "Cooked assets directory": "../../../../GameEngine/Assets/Serialized/",
-                "Edited scenes directory": "../../../../GameEngine/Tools/AssetsEditor/Saves/",
-                "Exported scenes directory": "../../../../GameEngine/EngineCoreTest/DemoScenes/",
-                "Saved archetypes directory": "../../../../GameEngine/Tools/AssetsEditor/Archetypes/",
-                "Exported archetypes directory": "../../../../GameEngine/EngineCoreTest/DemoScenes/"
+                "Edited scenes directory": "../../Datas/Scenes_editor/",
+                "Exported scenes directory": "../../Datas/Scenes_export/",
+                "Saved archetypes directory": "../../Datas/Archetypes_editor/",
+                "Exported archetypes directory": "../../Datas/Archetypes_export/"
             }
         }
     }
